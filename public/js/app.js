@@ -52,7 +52,7 @@ weatherForm.addEventListener("submit", (event) => {
         }
         locationElement.textContent = data.cityName;
         tempElement.textContent =
-          (data.temperature - 273.5).toFixed(2) + String.fromCharCode(176);
+          (data.temperature - 273.5).toFixed(2) + String.fromCharCode(176) + "C";
         weatherCondition.textContent = data.description.toUpperCase();
       }
     });
